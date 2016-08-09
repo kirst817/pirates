@@ -3,17 +3,18 @@
   <head>
 
     <title>Pirates</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<!-- <link href="public/stylesheets/styles.css" rel="stylesheet" type="text/css" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- <link href="public/stylesheets/styles.css" rel="stylesheet" type="text/css" /> -->
    <script src="javascripts/app.js" charset="utf-8"></script>
    <script src="javascripts/controllers/controller.js" charset="utf-8"></script>
-   <script src="javascripts/config.js" charset="utf-8"></script>
+   <script src="javascripts/services/service.js" charset="utf-8"></script>
+   <script src="javascripts/routes/config.js" charset="utf-8"></script>
   </head>
 
-  <body>
+  <body ng-controller="PiratesController">
     <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -23,8 +24,10 @@
     </div>
   </div>
 </nav>
+ <div class='container'>
 
-<main ng-view></main>
+   <main ng-view></main>
+ </div>
 
   </body>
 </html>

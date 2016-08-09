@@ -1,1 +1,7 @@
 <h1>Pirates</h1>
+  <div ng-repeat='pirate in pirates'>
+    <h2>{{pirate.name}}</h2>
+    <p>{{pirate.poison}}</p>
+    <p>{{pirate.accessory}}</p>
+    <img ng-src="{{pirate.image_url}}" alt="" style="height: 250px;">
+  </div>
